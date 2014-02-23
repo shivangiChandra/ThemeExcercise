@@ -22,12 +22,12 @@ html body {
 .customPanel {
   //@include border-radius(0.4em);
   margin: 0.5em;
-
+  //background-color: transparent;
+  background-color: $readable-bg-color;
+  border: $custom-border;
+  border-radius: 0.4em;
+  color: $readable-text-color;
   .x-panel {
-    background-color: $readable-bg-color;
-    border: $custom-border;
-    border-radius: 0.4em;
-    color: $readable-text-color;
     .x-panel-inner {
       .x-toolbar {
         color: $readable-text-color;
