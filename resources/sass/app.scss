@@ -1,6 +1,7 @@
 $base-color: #E6E6E6 !default;
 //$base-color: #688A08 !default;
-$dark-color: darken($base-color, 80);
+$dark-color: dark
+en($base-color, 80);
 $border-color: darken($base-color, 20);
 $readable-bg-color: lighten($base-color, 100);
 $readable-text-color: darken($base-color, 95);
@@ -33,7 +34,7 @@ html body {
         min-height: 1.6em;
         border-top-left-radius: 0.4em;
         border-top-right-radius: 0.4em;
-        //@include background-gradient(lighten(saturate($base-color, 10%), 5%), $base-gradient);
+        @include background-gradient(lighten(saturate($base-color, 10%), 5%), $base-gradient);
       }
       .mainContent{
         padding: 0.5em;
