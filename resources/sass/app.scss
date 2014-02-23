@@ -27,8 +27,6 @@ html body {
   border: $custom-border;
   border-radius: 0.4em;
   color: $readable-text-color;
-  .x-panel {
-    .x-panel-inner {
       .x-toolbar {
         color: $readable-text-color;
         padding: 0.5em;
@@ -40,8 +38,6 @@ html body {
       .mainContent{
         padding: 0.5em;
       }
-    }
-  }
 }
 
 // Examples of using the icon mixin:
