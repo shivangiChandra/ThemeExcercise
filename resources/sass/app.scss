@@ -1,10 +1,48 @@
-// The following two lines import the default Sencha Touch theme. If you are building
-// a new theme, remove them and the add your own CSS on top of the base CSS (which
-// is already included in your app.json file).
+$base-color: #E6E6E6 !default;
+//$base-color: #688A08 !default;
+$dark-color: darken($base-color, 80);
+$border-color: darken($base-color, 20);
+$readable-bg-color: lighten($base-color, 100);
+$readable-text-color: darken($base-color, 95);
+$font-family: "calibri", "arial" !default;
+$custom-border: 0.09em solid $border-color;
+
 @import 'sencha-touch/default';
 @import 'sencha-touch/default/all';
 
 // Custom code goes here..
+html body {
+  background-color: $base-color;
+}
+
+#appLoadingIndicator > * {
+  background-color: $dark-color;
+}
+
+.customPanel {
+  //@include border-radius(0.4em);
+  margin: 0.5em;
+
+  .x-panel {
+    background-color: $readable-bg-color;
+    border: $custom-border;
+    border-radius: 0.4em;
+    color: $readable-text-color;
+    .x-panel-inner {
+      .x-toolbar {
+        color: $readable-text-color;
+        padding: 0.5em;
+        min-height: 1.6em;
+        border-top-left-radius: 0.4em;
+        border-top-right-radius: 0.4em;
+        //@include background-gradient(lighten(saturate($base-color, 10%), 5%), $base-gradient);
+      }
+      .mainContent{
+        padding: 0.5em;
+      }
+    }
+  }
+}
 
 // Examples of using the icon mixin:
 // @include icon('user');
